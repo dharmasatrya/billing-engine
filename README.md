@@ -72,25 +72,11 @@ DB_SSLMODE=disable
 
 # Server Configuration
 SERVER_PORT=8080
-
-# Migration Configuration
-MIGRATE_ON_STARTUP=false
 ```
 
 ### Database Migration
 
-To initialize the database schema:
-
-```bash
-# Set migration flag to true
-export MIGRATE_ON_STARTUP=true
-
-# Run the application once to migrate
-go run cmd/api/main.go
-
-# Set it back to false for normal operation
-export MIGRATE_ON_STARTUP=false
-```
+auto migrate on startup
 
 ### Running the Application
 
